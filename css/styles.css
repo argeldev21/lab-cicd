@@ -24,15 +24,28 @@ h1 {
   letter-spacing: 1px;
   text-shadow: 0 3px 8px rgba(0,0,0,0.3);
   animation: fadeIn 1.2s ease-out forwards;
+  margin-bottom: 50px;
 }
 
 a {
-  margin-top: 100px;
-  color: white;
+  padding: 10px 25px;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  color: currentColor;
   text-decoration: none;
   animation: fadeIn 1.2s ease-out forwards;
-
+  transition: 0.5s ease-in-out;
 }
+
+a:hover {
+  background-color: white;
+  color: #1976d2;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 12px rgba(0,0,0,0.3);
+  transition: 0.5s ease-in-out;
+}
+
+
 
 /* ANIMAZIONE */
 @keyframes fadeIn {
