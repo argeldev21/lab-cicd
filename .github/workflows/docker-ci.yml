@@ -80,12 +80,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Prepara gli artifact per GitHub Pages
+      # Inject automatic versioning into index.html
+      - name: Inject version into HTML
+        run: |
+          VERSION=$(echo "${{ github.sha }}" | cut -c1-7)
+          sed -i "s/{{VERSION}}/$VERSION/g" index.html
+
+      # Upload static site
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./
 
-      # Deploy su GitHub Pages
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
