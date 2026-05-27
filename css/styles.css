@@ -27,7 +27,7 @@ h1 {
 }
 
 a {
-  color: currentColor;
+  color: white;
   text-decoration: none;
   animation: fadeIn 1.2s ease-out forwards;
 
