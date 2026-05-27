@@ -1,0 +1,38 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TITOLO */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* ANIMAZIONE */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
