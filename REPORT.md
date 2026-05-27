@@ -27,7 +27,9 @@ La pipeline è composta da tre job:
 - Sito online e aggiornato automaticamente ad ogni push su `main`
 
 
-# Screenshot FASE 5 (Errore intenzionale)
-[images/Screenshot errore-intenzionale.png]
+# Screenshot FASE 6 (workflow & Errore intenzionale)
+[images/Screenshot workflow.png, images/Screenshot errore-intenzionale.png]
 
 
+# Screenshot FASE 6 (Sezione Packages)
+[images/Screenshot packages.png]
